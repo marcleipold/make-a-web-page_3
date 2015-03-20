@@ -1,0 +1,52 @@
+
+
+body { 
+  background: #272c48;
+  font-family: sans-serif
+}
+
+.header {
+  text-align: center;
+  padding: 30px;
+  color: white;
+}
+
+h1{ 
+  text-align:center;
+  margin:30px;
+  color: white;
+}
+
+h3{
+  text-align:center;
+  font-size:25px;
+  color: white;
+}
+
+h4{
+  text-align:center;
+  text-decoration:underline;
+  font-size:23px;
+}
+
+.stage {
+  margin: 30px;
+  background: #ED5A14;
+  margin: 40px;
+  padding: 30px;
+}
+
+.box {
+  margin: 30px;
+  background: white;
+  padding: 30px;
+  color: #ED5A14;
+  border-radius:30px;
+  
+}
+
+.description {
+  color: #ED5A14;
+  font-size: 20px;
+  
+}
