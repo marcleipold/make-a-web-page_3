@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <title>CodePen - A Pen by  Marc Leipold</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+  <div class="header">
+  <h1>Intro to Programming</h1>
+  <b>By: Marc Leipold</b>
+</div>
+
+<div class="stage">
+  <h1>Stage 0: Getting Started with HTML</h1>
+  <h3>Introduction to the Web</h3>
+
+  <div class="box">
+    <h4>World Wide Web</h4>
+    <div class="description">  
+      <p>The web is a collection of html documents that are all linked together by Hyper Links.</p>
+    </div>
+  </div>
+
+  <div class="box">
+    <h4>HTML</h4>
+    <div class="description">  
+      <p>HTML = Hyper Text Markup</p>
+      <p>Everything online is made up of HTML.</p>
+      <p>HTML is made up of:</p>
+      <ul>
+        <li>Text content (what you see)</li>
+        <li>Markup (what it looks like)</li>
+        <li>References to other documents (images, videos)</li>
+        <li>Links</li>
+      </ul>
+
+      <p><b>HTML Mark-up</b></p>
+      <p>HTML consists of opening tags and closing tags, which make up an element.</p>
+
+      HTML tags:
+      <ul>
+        <li>"em"= <em>italics</em></li>
+        <li>"b"= <b>bold</b></li>
+        <li>"p" = paragraph</li>
+        <li>"h1" to "h6" = Defines HTML headings</li>
+        <li>"div" = defines a section in a document</li>
+        <li>"!DOCTYPE" = Defines the document type</li>
+        <li>"br" = Defines a single line break</li>
+        <li>"img" = Defines an image</li>
+        <li>"a"= anchor (this is a link)</li>
+      </ul>
+
+      <p><b>HTML Attributes</b></p>
+      <p>HTML attributes are listed after the elements, but before the corresponding value. 
+        Links (a element) and images (img element) are self-closing and are considered Void tags beacuse they do not contain any content.</p>
+    </div>
+  </div>
+
+  <div class="box">
+    <h4>More information...</h4>
+
+    <div class="description">  
+     <b>HTML Whitespaces</b>
+     <p>Turns everything into one line. If we want to seperate the contents into multiple lines, 
+       we write "br" which is a Void tag for "break". The "p" tag is also used and is not a Void 
+       tag because it includes content.</p>
+
+     <b>Inline and Block Elements</b>
+     <p>These two types of elements are used to separate content. An example of
+       an inline element is "br" because it adds a break in the content and places 
+       the text on the next line below. 
+       An example of a block element is "p" because it creates an invisible blox 
+       around the content and also has a height and a width.
+     Span is also an inline element and Div is a block element.</p>
+
+     <b>Page Structure</b>
+     <p>Websites are created like a house. The HTML is the structure, 
+       the CSS is the styling or decor, and Javascript is the functional 
+       parts or garage door.</p>
+   </div>
+ </div>
+</div>
+
+<div class="stage">
+  <h1>Stage 1: Webpages, Documents, and Structure</h1>
+  <h3>The Basics of the Web and HTML</h3>
+
+ <div class="box">
+   <h4>HTML, CSS, and DOM</h4>
+   <div class="description">  
+     <p><b>HTML</b> is the language of the web and includes syntax + rules.</p>
+
+     <p><b>CSS</b> is a language that uses syntax + rules to change the way an 
+       element looks on the page.</p>
+
+     <p><b>Tags</b> are part of the lement that make up an HTML tree.</p>
+
+     <p><b>DOM</b> ( Document Object Model) is what puts everything together. 
+       The tree that we see in developer tools is the DOM tree that the browser 
+       built from the HTML document.</p>
+
+     <p>Each tag has an element that describes what type it is. An element consists 
+       of a beginning tag, a closing tag, and everything in between.</p>
+    </div>
+  </div>
+
+  <div class="box">
+    <h4>Boxes, Boxes, Boxes Everywhere</h4>
+    <div class="description">  
+      <p>Even if the shape is a circle, in HTML everything is made up of boxes. 
+        If you want to right-click to inspect an element, you will see an 
+        assortment of diffrent boxes.</p>
+
+      <p>By thinking of things in boxes it’s easier to rearrange your website. 
+        A grid in background makes sure everything is aligned. When plotting 
+        your squares and layout of HTML structure, remember: <b>START BIG AND
+        GO SMALLER</b></p> 
+    </div>
+  </div>
+
+  <div class="box">
+    <h4>Understanding CSS (aka Cascading Style Sheet)</h4>
+    <div class="description">  
+      <p>Now for some general laws...just like in our society; we have national
+        laws, state laws, local municipality laws, and house rules. CSS has 
+        laws/rules. The most specific ruleis applied to every element. Thus, our 
+        "house laws" would be the same as our "national laws".</p>
+
+      <p>Cascading means that rules are applied not only to the elements they 
+        directly match but also to all of the elements' child elements. However, 
+        if a child element has multiple overlapping rules defined for it, the more 
+        specific rules apply.</p>
+
+      <p>When using CSS it can be helpful to think about it as a Search-n-Replace 
+        tool. You identify a "class" or "tag" of the element you want to match and 
+        then what you want to do with, or what property values to replace with different 
+        ones. Also, where and in what order matter. Styles can be defined in different 
+        places and are applied in the following order, with definitions further down 
+        `the list overwriting previous definitions:</p>
+
+      <ul>
+        <li>Default style of a browser (different browsers have slightly different styles)</li>
+        <li>Stylesheet in a separate file (mostly used)</li>
+        <li>Stylesheet inside a HTML (used for smaller projects, not ideal)</li>
+        <li>Inline style in an element (should be avoided)</li>
+      </ul>
+
+      <p><b>Inheritance:</b> relies on the ancestor/descendant relationship to operate. The idea by which properties are applied, not only to a specified element, but also it's descendants. It relies on the document tree, the hierarchy of HTML elements. Child elements may inherit CSS properties from any ancestor element enclosing it; they can also inherit text related properties, but box related properties are not inherited.</p>
+
+      <p>Properties that can be inherited:</p>
+      <ul>
+        <li>color</li>
+        <li>font</li>
+        <li>letter spacing</li>
+        <li>line height</li>
+        <li>list style</li>
+        <li>text align/indent</li>
+        <li>text transform</li>
+        <li>visibilty</li>
+        <li>white space</li>
+        <li>word spacing</li>
+      </ul>
+
+       <p>Properties that can't be inherited:</p>
+       <ul>
+        <li>background</li>
+        <li>border</li>
+        <li>display</li>
+        <li>float & clear</li>
+        <li>height & width</li>
+        <li>margin</li>
+        <li>min & max/ height & width</li>
+        <li>outline</li>
+        <li>overflow</li>
+        <li>padding</li>
+        <li>position</li>
+        <li>text decoration</li>
+        <li>vertical align</li>
+        <li>z index</li>
+      </ul>
+    </div>
+  </div>   
+
+  <div class="box">
+    <h4>Selectors</h4>
+    <div class="description">  
+      <p>Selectors are what allows you to targe specifc HTML elements and apply style to them. By doing this, you can condense your CSS to avoid unnecessary repetition, which waste time, and time is precious. It is recommended that CSS and HTML are kept in two different files, by keeping the design away from the document they are easier to edit. Selectors can be combined. Below is a list of different type of Selectors.</p>
+
+      <p><b>ID Selectors</b><br>
+      Most powerful type of selector, beat out other types of selectors and styles. Having lower specificity selectors are easier to override.</p>
+
+      <p><b>Class Selectors</b><br>
+      Most useful and versatile. Well supported in all browsers. Add multiple classes separated by space on HTML elements. Also JavaScript stuff you can do specifically for manipulating classes.</p>
+
+      <p><b>Tag Selectors</b><br>
+      Most useful when changing properties that are unique to HTML element. Like setting the list style on a "ul" or tab-size on a "pre". Typically more useful to have class define styling that you can use on any HTML element.</p>
+
+      <p><b>Attribute Selector</b><br>
+      More useful than classes because they have the same specificity value, but they can be any attribute, not just "class". They also can have a value you can select by.</p>
+
+      <p><b>Positional Selectors</b><br>
+      Several positional selectors beyond: nth-child; using simple expressions (like 3n="every third") you can select elements based on their position in the HTML.
+      Other Pseudo Selectors
+      ":empty" is one of many pseudo selectors, which you can recognize by the ":". They typically represent something you couldn't know just by the element and attributes alone. *These are different than pseudo elements, which are recognizable by "::"-they are responsible for adding things to the page by the things they select.</p>
+    </div>
+  </div>
+
+  <div class="box">
+    <h4>Revisiting the BOX</h4>
+    <div class="description">  
+      <p>We know that everything on a webpage is made up of a box. Which consists of 4 parts:
+      <ol>
+        <li><u>Content-</u> this is the image or text that appears on the website, comparable to the nucleus of the box, the other layers serve to protect it so other things don't get to close or overlap</li>
+
+        <li><u>Padding-</u> this clears an area around the content, is affected by background color, and is the space that protects the content directly</li>
+
+        <li><u>Border-</u> inherits color property of box, incases the padding and content</li>
+
+        <li><u>Margin-</u> goes around border, outer most layer, provides space between boxes, transparent</li>
+      </ol>
+
+      <p>To deal with sizing issues, use: "box-sizing:border-box...however...to make sure older browsers are able to display this CSS, you must add browser specific prefixes "webkit, moz, ms". If we set box size to percentage rather than pixels, the box sizing will adjust to size of screen. When positioning boxes remember: *divs are block elements so by default they take up the entire width of a page, to deal with this we can add the "display:flex" to appropriate CSS will override this behavior and let divs appear next to each other!* See this link for more information on FlexBox</p>
+    </div>
+  </div> 
+
+  <div class="box">
+  <h4>Code, Test, & Refine!</h4>
+    <div class="description">  
+      <p>Compare your code to the design you were given...	How to know what to change?</p>
+
+      <ol>
+        <li>Get page structure right, by visually boxifying it
+          <ul>
+            <li>Look for natural boxes</li>
+          </ul>
+        </li>
+        <li>Move on to tags(make heading h1)
+          <ul>
+            <li>Look for repeated styles & semantic elements</li>
+          </ul>
+            </li>
+        <li>Size of boxes, how big, and how to position
+          <ul>
+            <li>Write html</li>
+            <li>Apply styles(biggest to smallest)</li>
+            <li>Fix things!</li>
+          </ul>
+          </li>
+      </ol>
+
+      <p>Repeat steps above till it looks like the design mock up! The fly without changing actual html and css files, just like a preview! To verify code, go to the following links: HTML checker and CSS checker</p>
+    </div>
+  </div>
+</div>
+
+</body>
+
+</html>
